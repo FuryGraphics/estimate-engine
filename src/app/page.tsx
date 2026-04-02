@@ -345,8 +345,6 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-            {/* Connecting line (desktop) */}
-            <div className="hidden md:block absolute top-10 left-1/4 right-1/4 h-0.5 bg-[#e8a743] opacity-30" />
 
             {steps.map((step, i) => (
               <div key={step.number} className="relative flex flex-col items-center text-center">
