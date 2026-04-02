@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:stonesystems.io)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
