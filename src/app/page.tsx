@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FAQSection from "@/components/FAQSection";
+import ResultsSection from "@/components/ResultsSection";
 
 /* ── Data ────────────────────────────────────────────────── */
 const products = [
@@ -165,7 +166,7 @@ export default function HomePage() {
           <div className="inline-flex items-center gap-2 bg-[#e8a743]/10 border border-[#e8a743]/30 rounded-full px-4 py-2 mb-8 fade-in">
             <span className="w-2 h-2 bg-[#e8a743] rounded-full animate-pulse" />
             <span className="text-[#c98a2a] text-sm font-semibold">
-              $297/month · No Contracts · Launch in 7–10 Days
+              $297/month · No Contracts
             </span>
           </div>
 
@@ -404,69 +405,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ─────────────────────────────────── */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-14">
-            <span className="inline-block text-[#e8a743] text-sm font-semibold uppercase tracking-widest mb-4">
-              Testimonials
-            </span>
-            <h2 className="text-3xl sm:text-5xl font-black text-[#1a1a1a] mb-4">
-              Don&apos;t Take Our Word For It
-            </h2>
-            <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              Real contractors. Real results. No fake screenshots or made-up case studies.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <div
-                key={i}
-                className="group relative bg-white border border-gray-200 rounded-xl p-6 card-hover shadow-sm cursor-pointer"
-              >
-                {/* Video thumbnail */}
-                <div className="relative rounded-lg overflow-hidden mb-5 bg-gray-100 h-40 flex items-center justify-center border border-gray-100">
-                  <img
-                    src={`https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=70&crop=entropy&fit=crop&h=300&w=600`}
-                    alt="Video thumbnail"
-                    className="w-full h-full object-cover opacity-60"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-14 h-14 bg-[#e8a743] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                      <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                {/* Stars */}
-                <div className="flex mb-3">
-                  {[...Array(5)].map((_, j) => (
-                    <span key={j} className="text-[#e8a743] text-base">★</span>
-                  ))}
-                </div>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4 italic">
-                  &quot;{t.quote}&quot;
-                </p>
-                <div>
-                  <div className="text-[#1a1a1a] font-bold text-sm">{t.name}</div>
-                  <div className="text-gray-400 text-xs">{t.trade}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link
-              href="/testimonials"
-              className="inline-flex items-center gap-2 border-2 border-gray-200 hover:border-[#e8a743] text-gray-700 font-semibold px-6 py-3 rounded-xl transition-all hover:text-[#1a1a1a]"
-            >
-              See All Testimonials →
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* ── CLIENT RESULTS ───────────────────────────────── */}
+      <ResultsSection />
 
       {/* ── PARTNERS ─────────────────────────────────────── */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 border-t border-b border-gray-100 bg-[#f7f7f7]">

@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const navLinks = [
   { label: "Products", href: "/#products" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Testimonials", href: "/testimonials" },
+  { label: "Client Results", href: "/testimonials" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Trades", href: "/trades-we-serve" },
 ];
@@ -35,9 +35,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 bg-[#e8a743] rounded-lg flex items-center justify-center font-black text-white text-sm tracking-tight shadow-md group-hover:scale-105 transition-transform">
-              EE
-            </div>
+            <img
+              src="/logo.jpg"
+              alt="Estimate Engine"
+              className="w-11 h-11 object-contain group-hover:scale-105 transition-transform"
+            />
             <span className="font-bold text-[#1a1a1a] text-lg leading-none">
               Estimate Engine
             </span>

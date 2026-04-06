@@ -26,26 +26,16 @@ export default function Footer() {
   return (
     <footer className="bg-[#f7f7f7] border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top CTA band */}
-        <div className="py-12 border-b border-gray-200 text-center">
-          <p className="text-gray-500 text-base mb-2">Want to learn more about how we can help?</p>
-          <h3 className="text-2xl font-black text-[#1a1a1a] mb-6">Book a free call with our team today.</h3>
-          <Link
-            href="#"
-            className="inline-flex items-center gap-2 bg-[#e8a743] hover:bg-[#c98a2a] text-white font-bold px-6 py-3 rounded-xl transition-colors shadow-md"
-          >
-            Book A Free Call →
-          </Link>
-        </div>
-
         {/* Main footer grid */}
         <div className="py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 bg-[#e8a743] rounded-lg flex items-center justify-center font-black text-white text-sm">
-                EE
-              </div>
+              <img
+                src="/logo.jpg"
+                alt="Estimate Engine"
+                className="w-11 h-11 object-contain"
+              />
               <span className="font-bold text-[#1a1a1a] text-lg">Estimate Engine</span>
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
