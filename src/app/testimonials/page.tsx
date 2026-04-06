@@ -7,18 +7,18 @@ import Link from "next/link";
 const YOUTUBE_VIDEO_ID = "_6sasqQ6TT0";
 
 const resultImages = [
-  { src: "/results/Result-1.png", alt: "Client result 1" },
-  { src: "/results/Result-2.png", alt: "Client result 2" },
-  { src: "/results/Result-3.png", alt: "Client result 3" },
-  { src: "/results/Result-4.png", alt: "Client result 4" },
-  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM.png", alt: "Client result 5" },
-  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(1).png", alt: "Client result 6" },
-  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(3).png", alt: "Client result 7" },
-  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(4).png", alt: "Client result 8" },
-  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(5).png", alt: "Client result 9" },
-  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(10).png", alt: "Client result 10" },
-  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(11).png", alt: "Client result 11" },
-  { src: "/results/Hue_Saturation%205.png", alt: "Client result 12" },
+  { src: "/results/Hue_Saturation%201.png", alt: "Client result 1" },
+  { src: "/results/Hue_Saturation%202.png", alt: "Client result 2" },
+  { src: "/results/Hue_Saturation%203.png", alt: "Client result 3" },
+  { src: "/results/Hue_Saturation%204.png", alt: "Client result 4" },
+  { src: "/results/Hue_Saturation%205.png", alt: "Client result 5" },
+  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM.png", alt: "Client result 6" },
+  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(1).png", alt: "Client result 7" },
+  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(3).png", alt: "Client result 8" },
+  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(4).png", alt: "Client result 9" },
+  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(5).png", alt: "Client result 10" },
+  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(10).png", alt: "Client result 11" },
+  { src: "/results/WhatsApp%20Image%202026-04-07%20at%2012.21.55%20AM%20(11).png", alt: "Client result 12" },
 ];
 
 export default function TestimonialsPage() {

@@ -4,22 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 
 const results = [
-  {
-    src: "/results/Result-1.png",
-    alt: "Client result – $4,500 install sold",
-  },
-  {
-    src: "/results/Result-2.png",
-    alt: "Client result – $5k install sold",
-  },
-  {
-    src: "/results/Result-3.png",
-    alt: "Client result – $3,250 install sold",
-  },
-  {
-    src: "/results/Result-4.png",
-    alt: "Client result – call came in through Google",
-  },
+  { src: "/results/Hue_Saturation%201.png", alt: "Client result 1" },
+  { src: "/results/Hue_Saturation%202.png", alt: "Client result 2" },
+  { src: "/results/Hue_Saturation%203.png", alt: "Client result 3" },
+  { src: "/results/Hue_Saturation%204.png", alt: "Client result 4" },
 ];
 
 // Replace with your actual YouTube video ID (the part after ?v=)
