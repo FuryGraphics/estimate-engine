@@ -196,17 +196,21 @@ export default function HomePage() {
 
           {/* Rating badges */}
           <div className="flex flex-wrap items-center justify-center gap-4 fade-up-delay-3">
-            {["Google", "Facebook", "Trustpilot"].map((platform) => (
+            {[
+              { platform: "Google", rating: 4.6, stars: 5 },
+              { platform: "Meta", rating: 4.2, stars: 4 },
+              { platform: "Trustpilot", rating: 4.3, stars: 4 },
+            ].map(({ platform, rating, stars }) => (
               <div
                 key={platform}
                 className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2 shadow-sm"
               >
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-[#e8a743] text-sm">★</span>
+                    <span key={i} className={`text-sm ${i < stars ? "text-[#e8a743]" : "text-gray-300"}`}>★</span>
                   ))}
                 </div>
-                <span className="text-[#1a1a1a] text-sm font-semibold">5.0</span>
+                <span className="text-[#1a1a1a] text-sm font-semibold">{rating}</span>
                 <span className="text-gray-400 text-xs">{platform}</span>
               </div>
             ))}
