@@ -60,13 +60,11 @@ export default function PricingToggle() {
             }`}
           />
         </button>
-        <span className={`text-sm font-medium flex items-center gap-2 ${annual ? "text-[#1a1a1a]" : "text-gray-400"}`}>
+        <span className={`text-sm font-medium ${annual ? "text-[#1a1a1a]" : "text-gray-400"}`}>
           Annually
-          {annual && (
-            <span className="bg-green-100 text-green-600 text-xs font-bold px-2 py-0.5 rounded-full">
-              Save 20%
-            </span>
-          )}
+        </span>
+        <span className={`bg-green-100 text-green-600 text-xs font-bold px-2 py-0.5 rounded-full transition-opacity ${annual ? "opacity-100" : "opacity-0"}`}>
+          Save 20%
         </span>
       </div>
 
