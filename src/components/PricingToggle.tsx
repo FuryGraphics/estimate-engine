@@ -49,15 +49,13 @@ export default function PricingToggle() {
         </span>
         <button
           onClick={() => setAnnual(!annual)}
-          className={`relative w-14 h-7 rounded-full transition-colors duration-200 ${
-            annual ? "bg-[#e8a743]" : "bg-gray-200"
-          }`}
+          style={{ backgroundColor: annual ? "#e8a743" : "#d1d5db" }}
+          className="relative w-14 h-7 rounded-full transition-colors duration-200"
           aria-label="Toggle annual billing"
         >
           <span
-            className={`absolute top-1 w-5 h-5 bg-white rounded-full shadow-md transition-transform duration-200 ${
-              annual ? "translate-x-8" : "translate-x-1"
-            }`}
+            className="absolute top-1 w-5 h-5 bg-white rounded-full shadow-md transition-transform duration-200"
+            style={{ transform: annual ? "translateX(32px)" : "translateX(4px)" }}
           />
         </button>
         <span className={`text-sm font-medium ${annual ? "text-[#1a1a1a]" : "text-gray-400"}`}>
