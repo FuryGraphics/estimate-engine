@@ -11,6 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  icons: { icon: "/icon.png" },
   title: "Estimate Engine — Done-For-You Marketing For Home Service Contractors",
   description:
     "Stop chasing leads. Estimate Engine gives home service contractors a complete digital marketing system — website, automated follow-up, review funnels & more — for $297/month.",
