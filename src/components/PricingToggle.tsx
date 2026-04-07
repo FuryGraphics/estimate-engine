@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import BookCalButton from "@/components/BookCalButton";
 
 const features = [
   "Functional Website (15–20 pages)",
@@ -115,12 +116,9 @@ export default function PricingToggle() {
             ))}
           </ul>
 
-          <a
-            href="#"
-            className="block w-full bg-[#e8a743] hover:bg-[#c98a2a] text-white font-black text-center py-4 rounded-xl text-base transition-colors shadow-md"
-          >
+          <BookCalButton className="block w-full bg-[#e8a743] hover:bg-[#c98a2a] text-white font-black text-center py-4 rounded-xl text-base transition-colors shadow-md">
             Get Started — Book A Call →
-          </a>
+          </BookCalButton>
         </div>
       </div>
 

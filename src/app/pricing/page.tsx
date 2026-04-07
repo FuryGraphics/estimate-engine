@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PricingToggle from "@/components/PricingToggle";
+import BookCalButton from "@/components/BookCalButton";
 
 export const metadata: Metadata = {
   title: "Pricing — Estimate Engine",
@@ -129,12 +130,9 @@ export default function PricingPage() {
             we can&apos;t fix it, we&apos;ll refund you. We&apos;re not in the business of keeping money we
             didn&apos;t earn.
           </p>
-          <Link
-            href="#"
-            className="inline-flex items-center gap-2 bg-[#e8a743] hover:bg-[#c98a2a] text-white font-black px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
-          >
+          <BookCalButton className="inline-flex items-center gap-2 bg-[#e8a743] hover:bg-[#c98a2a] text-white font-black px-8 py-4 rounded-xl text-lg transition-colors shadow-lg">
             Book A Free Demo Call →
-          </Link>
+          </BookCalButton>
           <p className="text-gray-400 text-sm mt-4">No credit card required for the call.</p>
         </div>
       </section>

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import BookCalButton from "@/components/BookCalButton";
 
 const navLinks = [
   { label: "Products", href: "/#products" },
@@ -70,12 +71,9 @@ export default function Navbar() {
             >
               Log In
             </Link>
-            <Link
-              href="#"
-              className="bg-[#e8a743] hover:bg-[#c98a2a] active:bg-[#b87a25] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-md"
-            >
+            <BookCalButton className="bg-[#e8a743] hover:bg-[#c98a2a] active:bg-[#b87a25] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-md">
               Book A Call →
-            </Link>
+            </BookCalButton>
           </div>
 
           {/* Mobile Menu Button */}
@@ -118,13 +116,9 @@ export default function Navbar() {
             >
               Log In
             </Link>
-            <Link
-              href="#"
-              className="bg-[#e8a743] hover:bg-[#c98a2a] text-white text-sm font-semibold px-5 py-3 rounded-lg text-center transition-colors"
-              onClick={() => setMenuOpen(false)}
-            >
+            <BookCalButton className="bg-[#e8a743] hover:bg-[#c98a2a] text-white text-sm font-semibold px-5 py-3 rounded-lg text-center transition-colors w-full">
               Book A Call →
-            </Link>
+            </BookCalButton>
           </div>
         </div>
       )}

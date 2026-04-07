@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import BookCalButton from "@/components/BookCalButton";
 
 const trades = [
   "Roofing", "Plumbing", "HVAC", "Electrician", "Landscaping", "Painting",
@@ -96,12 +97,9 @@ export default function ContactPage() {
               <p className="text-gray-500 text-sm mb-4">
                 Skip the form. Pick a time that works for you.
               </p>
-              <a
-                href="#"
-                className="inline-block w-full bg-[#e8a743] hover:bg-[#c98a2a] text-white font-bold py-3 rounded-lg text-sm transition-colors shadow-md"
-              >
+              <BookCalButton className="inline-block w-full bg-[#e8a743] hover:bg-[#c98a2a] text-white font-bold py-3 rounded-lg text-sm transition-colors shadow-md">
                 Book A Free Call →
-              </a>
+              </BookCalButton>
               <p className="text-gray-400 text-xs mt-2">Calendar booking — no login required</p>
             </div>
           </div>

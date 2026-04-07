@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BookCalButton from "@/components/BookCalButton";
 
 export const metadata: Metadata = {
   title: "How It Works — Estimate Engine",
@@ -207,12 +208,9 @@ export default function HowItWorksPage() {
           <p className="text-gray-500 text-lg mb-8">
             Book your free 20-minute demo. No commitment required — just a conversation.
           </p>
-          <Link
-            href="#"
-            className="inline-flex items-center gap-2 bg-[#e8a743] hover:bg-[#c98a2a] text-white font-black px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
-          >
+          <BookCalButton className="inline-flex items-center gap-2 bg-[#e8a743] hover:bg-[#c98a2a] text-white font-black px-8 py-4 rounded-xl text-lg transition-colors shadow-lg">
             Book A Demo Call →
-          </Link>
+          </BookCalButton>
           <p className="text-gray-400 text-sm mt-4">Launch in 7–10 business days. No long-term contract.</p>
         </div>
       </section>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import BookCalButton from "@/components/BookCalButton";
 
 // Replace with your actual YouTube video ID
 const YOUTUBE_VIDEO_ID = "_6sasqQ6TT0";
@@ -96,12 +97,9 @@ export default function TestimonialsPage() {
           <p className="text-white/80 text-lg mb-8">
             Book a free 20-minute call. We&apos;ll show you exactly what we&apos;d build for your business.
           </p>
-          <Link
-            href="#"
-            className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-[#c98a2a] font-black px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
-          >
+          <BookCalButton className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-[#c98a2a] font-black px-8 py-4 rounded-xl text-lg transition-colors shadow-lg">
             Book A Free Demo Call →
-          </Link>
+          </BookCalButton>
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FAQSection from "@/components/FAQSection";
 import ResultsSection from "@/components/ResultsSection";
+import BookCalButton from "@/components/BookCalButton";
 
 /* ── Data ────────────────────────────────────────────────── */
 const products = [
@@ -182,12 +183,9 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 fade-up-delay-2">
-            <Link
-              href="#"
-              className="w-full sm:w-auto bg-[#e8a743] hover:bg-[#c98a2a] text-white font-black px-8 py-4 rounded-xl text-lg transition-colors shadow-lg gold-glow"
-            >
+            <BookCalButton className="w-full sm:w-auto bg-[#e8a743] hover:bg-[#c98a2a] text-white font-black px-8 py-4 rounded-xl text-lg transition-colors shadow-lg gold-glow">
               Book A Free Call →
-            </Link>
+            </BookCalButton>
             <Link
               href="/how-it-works"
               className="w-full sm:w-auto border-2 border-gray-200 hover:border-[#e8a743] text-gray-700 font-semibold px-8 py-4 rounded-xl text-lg transition-colors hover:text-[#1a1a1a]"
@@ -445,12 +443,9 @@ export default function HomePage() {
             We&apos;ll show you exactly what we&apos;d build for your business — and what it&apos;ll cost.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="#"
-              className="w-full sm:w-auto bg-white hover:bg-gray-50 text-[#c98a2a] font-black px-10 py-4 rounded-xl text-lg transition-colors shadow-xl"
-            >
+            <BookCalButton className="w-full sm:w-auto bg-white hover:bg-gray-50 text-[#c98a2a] font-black px-10 py-4 rounded-xl text-lg transition-colors shadow-xl">
               Book Your Free Demo Call →
-            </Link>
+            </BookCalButton>
             <Link
               href="/pricing"
               className="w-full sm:w-auto border-2 border-white/40 hover:border-white text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors hover:bg-white/10"

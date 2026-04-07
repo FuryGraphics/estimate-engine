@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BookCalButton from "@/components/BookCalButton";
 
 export const metadata: Metadata = {
   title: "Trades We Serve — Estimate Engine",
@@ -192,12 +193,9 @@ export default function TradesWeServePage() {
             If you run a home service business, we can almost certainly help.
             Jump on a call and we&apos;ll tell you exactly what we&apos;d build.
           </p>
-          <Link
-            href="#"
-            className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-[#c98a2a] font-black px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
-          >
+          <BookCalButton className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-[#c98a2a] font-black px-8 py-4 rounded-xl text-lg transition-colors shadow-lg">
             Book A Free Call →
-          </Link>
+          </BookCalButton>
         </div>
       </section>
     </div>
