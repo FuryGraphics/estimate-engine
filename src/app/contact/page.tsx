@@ -31,8 +31,13 @@ export default function ContactPage() {
     e.preventDefault();
     setSending(true);
     try {
+      const nameParts = form.name.trim().split(/\s+/);
+      const firstName = nameParts[0] || "";
+      const lastName = nameParts.slice(1).join(" ") || "";
       const params = new URLSearchParams({
-        name: form.name,
+        first_name: firstName,
+        last_name: lastName,
+        full_name: form.name,
         business_name: form.business,
         trade: form.trade,
         phone: form.phone,
