@@ -111,11 +111,11 @@ export default function ContactPage() {
               <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-3">
                   <span className="text-lg">📧</span>
-                  <span className="text-gray-600 text-sm">hello@estimateengine.com</span>
+                  <span className="text-gray-600 text-sm">carmoucheriley@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-lg">📞</span>
-                  <span className="text-gray-600 text-sm">(555) 000-0000</span>
+                  <span className="text-gray-600 text-sm">(225) 773-4482</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-lg">🕐</span>
