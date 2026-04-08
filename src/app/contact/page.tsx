@@ -31,19 +31,20 @@ export default function ContactPage() {
     e.preventDefault();
     setSending(true);
     try {
+      const params = new URLSearchParams({
+        name: form.name,
+        business_name: form.business,
+        trade: form.trade,
+        phone: form.phone,
+        email: form.email,
+        message: form.message,
+      });
       await fetch(
         "https://services.leadconnectorhq.com/hooks/E8piAP9iMg2Lk1qEyQ6I/webhook-trigger/9e30bddd-3112-4241-9e74-0084fd5b90d1",
         {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: form.name,
-            business_name: form.business,
-            trade: form.trade,
-            phone: form.phone,
-            email: form.email,
-            message: form.message,
-          }),
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: params.toString(),
           mode: "no-cors",
         }
       );
