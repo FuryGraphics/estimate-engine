@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Client Results", href: "/testimonials" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Trades", href: "/trades-we-serve" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
