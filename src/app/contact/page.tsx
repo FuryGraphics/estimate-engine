@@ -43,6 +43,7 @@ export default function ContactPage() {
         phone: form.phone,
         email: form.email,
         message: form.message,
+        tags: "website lead",
       });
       await fetch(
         "https://services.leadconnectorhq.com/hooks/E8piAP9iMg2Lk1qEyQ6I/webhook-trigger/9e30bddd-3112-4241-9e74-0084fd5b90d1",
