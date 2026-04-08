@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:stonesystems.io)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }
