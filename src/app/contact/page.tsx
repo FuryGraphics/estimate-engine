@@ -182,8 +182,14 @@ export default function ContactPage() {
                   <select
                     name="trade"
                     required
-                    value={form.trade}
-                    onChange={handleChange}
+                    value={trades.includes(form.trade) || form.trade === "" ? form.trade : "Other"}
+                    onChange={(e) => {
+                      if (e.target.value === "Other") {
+                        setForm({ ...form, trade: "Other" });
+                      } else {
+                        setForm({ ...form, trade: e.target.value });
+                      }
+                    }}
                     className="w-full bg-white border border-gray-200 focus:border-[#e8a743] rounded-lg px-4 py-3 text-[#1a1a1a] text-sm outline-none transition-colors appearance-none cursor-pointer"
                   >
                     <option value="" disabled className="text-gray-400">Select your trade...</option>
@@ -191,6 +197,18 @@ export default function ContactPage() {
                       <option key={t} value={t}>{t}</option>
                     ))}
                   </select>
+                  {(form.trade === "Other" || (!trades.includes(form.trade) && form.trade !== "")) && (
+                    <input
+                      type="text"
+                      name="trade"
+                      required
+                      value={form.trade === "Other" ? "" : form.trade}
+                      onChange={(e) => setForm({ ...form, trade: e.target.value || "Other" })}
+                      placeholder="Type your trade..."
+                      className="w-full bg-white border border-gray-200 focus:border-[#e8a743] rounded-lg px-4 py-3 text-[#1a1a1a] text-sm placeholder-gray-400 outline-none transition-colors mt-3"
+                      autoFocus
+                    />
+                  )}
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
