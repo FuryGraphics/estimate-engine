@@ -32,7 +32,7 @@ export default function ContactPage() {
     setSending(true);
     try {
       await fetch(
-        "https://services.leadconnectorhq.com/hooks/E8piAP9iMg2Lk1qEyQ6I/webhook-trigger/0421c3e5-9130-401a-a711-ba3ecb35657e",
+        "https://services.leadconnectorhq.com/hooks/E8piAP9iMg2Lk1qEyQ6I/webhook-trigger/9e30bddd-3112-4241-9e74-0084fd5b90d1",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
