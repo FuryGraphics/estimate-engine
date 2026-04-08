@@ -65,12 +65,6 @@ export default function Navbar() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Link
-              href="#"
-              className="text-sm text-gray-500 hover:text-[#1a1a1a] transition-colors font-medium"
-            >
-              Log In
-            </Link>
             <BookCalButton className="bg-[#e8a743] hover:bg-[#c98a2a] active:bg-[#b87a25] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-md">
               Book A Call →
             </BookCalButton>
@@ -109,13 +103,6 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="border-t border-gray-100 mt-2 pt-3 flex flex-col gap-2">
-            <Link
-              href="#"
-              className="text-gray-500 text-sm font-medium py-2 px-3"
-              onClick={() => setMenuOpen(false)}
-            >
-              Log In
-            </Link>
             <BookCalButton className="bg-[#e8a743] hover:bg-[#c98a2a] text-white text-sm font-semibold px-5 py-3 rounded-lg text-center transition-colors w-full">
               Book A Call →
             </BookCalButton>
