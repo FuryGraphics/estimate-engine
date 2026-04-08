@@ -25,9 +25,34 @@ export default function ContactPage() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSending(true);
+    try {
+      await fetch(
+        "https://services.leadconnectorhq.com/hooks/E8piAP9iMg2Lk1qEyQ6I/webhook-trigger/0421c3e5-9130-401a-a711-ba3ecb35657e",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: form.name,
+            business_name: form.business,
+            trade: form.trade,
+            phone: form.phone,
+            email: form.email,
+            message: form.message,
+          }),
+          mode: "no-cors",
+        }
+      );
+      setSubmitted(true);
+    } catch {
+      setSubmitted(true);
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -215,9 +240,10 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#e8a743] hover:bg-[#c98a2a] active:bg-[#b87a25] text-white font-black py-4 rounded-xl text-base transition-colors shadow-md"
+                  disabled={sending}
+                  className="w-full bg-[#e8a743] hover:bg-[#c98a2a] active:bg-[#b87a25] text-white font-black py-4 rounded-xl text-base transition-colors shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Send My Message →
+                  {sending ? "Sending..." : "Send My Message →"}
                 </button>
 
                 <p className="text-gray-400 text-xs text-center">
