@@ -25,22 +25,6 @@ export default function Footer() {
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
               Done-for-you digital marketing for home service contractors. We build the system. You run the jobs.
             </p>
-            {/* Social */}
-            <div className="mt-6 flex items-center gap-3">
-              {[
-                { label: "YouTube", icon: "▶" },
-                { label: "Instagram", icon: "◎" },
-              ].map((s) => (
-                <Link
-                  key={s.label}
-                  href="#"
-                  aria-label={s.label}
-                  className="w-9 h-9 bg-white border border-gray-200 hover:border-[#e8a743] hover:bg-[#e8a743] rounded-lg flex items-center justify-center transition-colors text-gray-500 hover:text-white text-sm font-bold shadow-sm"
-                >
-                  {s.icon}
-                </Link>
-              ))}
-            </div>
           </div>
 
           {/* Company Links */}
