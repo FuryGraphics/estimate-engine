@@ -18,6 +18,7 @@ export default function ContactPage() {
     trade: "",
     phone: "",
     email: "",
+    revenue: "",
     message: "",
   });
 
@@ -42,6 +43,7 @@ export default function ContactPage() {
         trade: form.trade,
         phone: form.phone,
         email: form.email,
+        revenue: form.revenue,
         message: form.message,
         tags: "website lead",
       });
@@ -246,6 +248,28 @@ export default function ContactPage() {
                       placeholder="john@smithroofing.com"
                       className="w-full bg-white border border-gray-200 focus:border-[#e8a743] rounded-lg px-4 py-3 text-[#1a1a1a] text-sm placeholder-gray-400 outline-none transition-colors"
                     />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="text-gray-500 text-xs font-semibold uppercase tracking-widest block mb-2">
+                    What&apos;s Your Current Monthly Revenue? *
+                  </label>
+                  <div className="flex flex-col gap-2">
+                    {["$0 - $10,000", "$10,000 - $25,000", "$25,000 - $100,000", "$100,000+"].map((option) => (
+                      <label key={option} className="flex items-center gap-3 cursor-pointer">
+                        <input
+                          type="radio"
+                          name="revenue"
+                          value={option}
+                          checked={form.revenue === option}
+                          onChange={handleChange}
+                          required
+                          className="w-4 h-4 accent-[#e8a743]"
+                        />
+                        <span className="text-[#1a1a1a] text-sm">{option}</span>
+                      </label>
+                    ))}
                   </div>
                 </div>
 
