@@ -4,8 +4,9 @@ import PricingToggle from "@/components/PricingToggle";
 import BookCalButton from "@/components/BookCalButton";
 
 export const metadata: Metadata = {
-  title: "Pricing — Estimate Engine",
-  description: "Simple, transparent pricing for contractor marketing. $297/month, no contracts, cancel anytime.",
+  title: "Pricing — $297/Month Contractor Marketing",
+  description:
+    "Simple, transparent pricing for contractor marketing. $297/month gets you a custom website, review funnel, missed call text back, SMS campaigns, and more. No contracts, cancel anytime.",
 };
 
 const comparisons = [

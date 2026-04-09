@@ -3,8 +3,9 @@ import Link from "next/link";
 import BookCalButton from "@/components/BookCalButton";
 
 export const metadata: Metadata = {
-  title: "How It Works — Estimate Engine",
-  description: "From demo call to live website in 7–10 days. Here's exactly how the Estimate Engine onboarding process works.",
+  title: "How It Works — Launch in Under 2 Weeks",
+  description:
+    "From demo call to a fully live marketing system in 7-10 business days. See exactly how Estimate Engine builds your contractor website, review funnel, and automations.",
 };
 
 const steps = [

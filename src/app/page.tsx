@@ -154,9 +154,28 @@ const partners = [
 ];
 
 /* ── Component ───────────────────────────────────────────── */
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Estimate Engine",
+  url: "https://estimate-engine.com",
+  telephone: "(225) 773-4482",
+  email: "carmoucheriley@gmail.com",
+  description:
+    "Done-for-you digital marketing for home service contractors. Website design, review funnels, missed call text back, and SMS campaigns for $297/month.",
+  priceRange: "$297/month",
+  areaServed: "US",
+  serviceType: "Digital Marketing",
+  image: "https://estimate-engine.com/icon.png",
+};
+
 export default function HomePage() {
   return (
     <div className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* ── HERO ─────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-white">

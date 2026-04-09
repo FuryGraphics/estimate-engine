@@ -11,8 +11,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://estimate-engine.com"),
   icons: { icon: "/icon.png" },
-  title: "Estimate Engine — Done-For-You Marketing For Home Service Contractors",
+  title: {
+    default: "Estimate Engine — Done-For-You Marketing For Home Service Contractors",
+    template: "%s | Estimate Engine",
+  },
   description:
     "Stop chasing leads. Estimate Engine gives home service contractors a complete digital marketing system — website, automated follow-up, review funnels & more — for $297/month.",
   keywords:
@@ -22,6 +26,27 @@ export const metadata: Metadata = {
     description:
       "Done-for-you digital marketing for home service contractors. $297/month, no contracts.",
     type: "website",
+    url: "https://estimate-engine.com",
+    siteName: "Estimate Engine",
+    locale: "en_US",
+    images: [
+      {
+        url: "/icon.png",
+        width: 512,
+        height: 512,
+        alt: "Estimate Engine logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Estimate Engine — Marketing Systems For Contractors",
+    description:
+      "Done-for-you digital marketing for home service contractors. $297/month, no contracts.",
+    images: ["/icon.png"],
+  },
+  alternates: {
+    canonical: "https://estimate-engine.com",
   },
 };
 

@@ -3,8 +3,9 @@ import Link from "next/link";
 import BookCalButton from "@/components/BookCalButton";
 
 export const metadata: Metadata = {
-  title: "Trades We Serve — Estimate Engine",
-  description: "Estimate Engine builds marketing systems for 20+ home service trades. Roofing, plumbing, HVAC, electricians, landscaping, and more.",
+  title: "Trades We Serve — 20+ Home Service Industries",
+  description:
+    "Estimate Engine builds custom marketing systems for 20+ home service trades including roofing, plumbing, HVAC, electricians, landscaping, painting, remodeling, and more.",
 };
 
 const trades = [
