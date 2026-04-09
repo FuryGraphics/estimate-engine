@@ -11,6 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  verification: { google: "d8hcjoL45KIUKGhJVMEKEIHUqNNqA_ete3veiAgHzfQ" },
   metadataBase: new URL("https://estimate-engine.com"),
   icons: { icon: "/icon.png" },
   title: {
